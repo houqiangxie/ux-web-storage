@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: houqiangxie
+ * @Date: 2023-06-07 15:07:28
+ * @LastEditors: houqiangxie
+ * @LastEditTime: 2023-06-08 16:51:19
+ */
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -13,7 +21,8 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const configs = []
 
 const input = path.resolve(__dirname, 'src/index.ts')
-const pkgName = pkg.name
+// const pkgName = pkg.name
+const pkgName = 'index'
 const output = [{
   file: `${process.env.BUILD === 'test' ? 'playground' : 'dist'}/${pkgName}.js`,
   format: 'iife',
