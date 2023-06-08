@@ -1,7 +1,7 @@
 {
   "name": "ux-web-storage",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "",
   "author": "houqiangxie",
   "license": "MIT",
@@ -20,7 +20,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/ux-web-storage.mjs",
+  "main": "dist/ux-web-storage.cjs",
+  "module": "dist/ux-web-storage.mjs",
   "scripts": {
     "build": "rollup -c --environment BUILD:prod",
     "lint": "eslint . --fix",
