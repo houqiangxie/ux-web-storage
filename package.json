@@ -1,0 +1,44 @@
+{
+  "name": "ux-web-storage",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "",
+  "author": "houqiangxie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houqiangxie/ux-web-storage.git"
+  },
+  "keywords": [
+    "localStorage",
+    "sessionStorage",
+    "storage",
+    "indexdb",
+    "proxy"
+  ],
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "browser": "dist/index.min.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:prod",
+    "lint": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@playwright/test": "^1.32.3",
+    "@rollup/plugin-html": "^1.0.1",
+    "@types/node": "^18.7.10",
+    "esbuild": "^0.17.17",
+    "eslint": "^8.22.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-tsconfig-paths": "^1.5.0",
+    "serve-then": "^1.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}

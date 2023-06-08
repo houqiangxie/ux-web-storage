@@ -1,0 +1,9 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "no-eval": "off",
+    "no-invalid-this": "off",
+    "no-new-wrappers": "off",
+    "prefer-regex-literals": "off"
+  }
+}

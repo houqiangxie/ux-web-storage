@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "lib": ["DOM", "ESNEXT"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "target": "ES2020",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src/*.ts", "src/*/*.ts", "tests/*.ts"]
+}
