@@ -1,7 +1,7 @@
 {
   "name": "ux-web-storage",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "houqiangxie",
   "license": "MIT",
@@ -16,11 +16,11 @@
     "indexdb",
     "proxy"
   ],
-  "types": "dist/index.d.ts",
+  "types": "dist/ux-web-storage.d.ts",
   "files": [
     "dist"
   ],
-  "browser": "dist/index.min.js",
+  "main": "dist/ux-web-storage.min.js",
   "scripts": {
     "build": "rollup -c --environment BUILD:prod",
     "lint": "eslint . --fix",
