@@ -86,7 +86,7 @@ Listen to the changes.
 ```js
 import { local,session } from 'ux-web-storage'
 // indexdb订阅器
-db.useSubDb('key',(val)=>{})
+db.on('key',(newVal)=>{})
 
 local.on('test', (newVal, oldVal) => {
   console.log('test', newVal, oldVal)

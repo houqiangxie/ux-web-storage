@@ -290,7 +290,7 @@ export function entries<KeyType extends IDBValidKey, ValueType = any>(
   });
 }
 
-export const useSubDb = (key:string,callback:Function=()=>{}) => {
+export const on = (key:string,callback:Function=()=>{}) => {
   sub.subscribe(key, (value:unknown) => callback(value));
 }
 
