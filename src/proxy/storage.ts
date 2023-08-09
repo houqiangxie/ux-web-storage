@@ -133,6 +133,9 @@ function setItem(
   value: any,
   ...args: any[]
 ) {
+  args.forEach(arg => {
+    if (arg.expires) arg.expires += Date.now()
+  })
   return baseSetter(target, property, value, encode(value, args.at(-2)), args.at(-1))
 }
 
